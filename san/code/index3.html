@@ -1,0 +1,40 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="keywords" content="CSS选择器练习/基本选择器">
+		<meta name="author" content="我们不拉跨">
+		<meta name="description" content="实验三,Experiment 3">		
+		<style type="text/css">
+			div {
+				background: linear-gradient(#141e30,#243000);
+				color: red;
+			}
+
+			#div1 {
+				color: yellow;
+			}
+
+			.div2 {
+				color: blue;
+			}
+
+			div[class="shuxing"] {
+				color: pink;
+			}			
+		</style>
+	</head>
+	<!-- body样式 渐变色 从#14130 ~ #243b55 字体颜色-->
+	<body style="background: linear-gradient(#141e30, #243b55);color:#fff">		
+		<!-- div标签选择器 -->
+		<div>
+			这里是div标签的格式
+		</div>
+		<!-- id选择器 -->
+		<div id="div1">这是id为div1的区域</div>
+		<!-- class选择器 -->
+		<div class="div2">这是class为div2的区域</div>
+		<!-- 属性选择器 -->
+		<div class="shuxing">这里是属性选择器区域</div>
+	</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="keywords" content="CSS选择器练习/扩展选择器">
+		<meta name="author" content="我们不拉跨">
+		<meta name="description" content="实验三,Experiment 3">		
+		<style type="text/css">
+			div font {
+				color: red;
+				font-family: 隶书;
+				font-size: 20;
+			}
+			#div1,.div2 {
+				color: yellow;
+				font-family: 楷书;
+				font-size: 30;
+			}
+
+			a {
+				font-size: 20;
+				color: #fff;
+			}
+			/*未访问状态*/
+			a:link {
+				text-decoration: none;
+				color: #fff;	
+			}
+			a:visited {
+				color: #fff;
+			}
+			a:hover {
+				color: blue;
+				font-size: 40;
+			}
+			a:ACTIVE {
+				color:yellow;
+				font-size:35px;				
+			}
+		</style>
+	</head>
+	<!-- body样式 渐变色 从#14130 ~ #243b55 字体颜色-->
+	<body style="background: linear-gradient(#141e30, #243b55);color:#fff">		
+		<!-- 关联选择器 -->
+			<div>不能使用div font的格式</div>
+			<div>
+				<font>这是div和font的关联选择器区域</font>
+			</div>
+		<!-- 组合选择器 -->
+			<div id="div1">这是组合选择器格式</div>
+			<div class="div2">在style里同时更改了id为div1 和class是div2的格式</div><br />
+		<!-- 伪元素选择器-->
+			<a href="http:www.lovemiaow.top" target="_blank">点这里能链接我嘞博客</a>
+	</body>
+</html>

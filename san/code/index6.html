@@ -1,0 +1,55 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="keywords" content="CSS设计实战/响应式放大菜单">
+		<meta name="author" content="我们不拉跨">
+		<meta name="description" content="实验三,Experiment 3">		
+		<style type="text/css">
+			@keyframes myframe{
+				from {
+					transform: scale(1.0,1.0);
+				}
+				to {
+					transform: scale(1.3,1.3);
+				}
+			}
+
+			nav {
+				width: 500px;
+				text-align: center;
+				font-size: 30px;
+				font-weight: bold;
+				font-family: 隶书;
+				color: #fff;
+			}
+
+			div {
+				border-width: 1px;
+				border-style: solid;
+				width: 200px;
+				height: 100px;
+				line-height: 100px;
+				float: left;
+				margin: 20px;
+			}
+
+			div:hover {
+				animation: myframe 0.5s forwards;
+			}
+
+		
+		</style>
+	</head>
+	<!-- body样式 渐变色 从#14130 ~ #243b55 字体颜色-->
+	<body style="background: linear-gradient(#141e30, #243b55);color:#fff">		
+		<h3>响应式菜单</h3>
+		<hr />
+		<nav>
+			<div style="background-color: #66f;">主页</div>
+			<div style="background-color: #ff8000;">关于我</div>
+			<div style="background-color: #3cc;">我的blog</div>
+			<div style="background-color: #ff8080;">加入我们</div>
+		</nav>
+	</body>
+</html>

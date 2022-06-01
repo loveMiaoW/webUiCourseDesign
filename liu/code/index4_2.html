@@ -1,0 +1,31 @@
+<!DOCTYPE>
+<html>
+	<head>	
+		<meta charset="UTF-8">
+	    <meta name="description" content="实验六,Experiment 6">
+	    <meta name="author" content="我们不拉垮">
+	    <meta name="keywords" content="DOM讲义案例/动态删除节点">
+	</head>
+
+	<body>
+		<h4>无序列表</h4>
+		<ul>
+			<li>北京</li>
+			<li id="shId">上海</li>
+			<li>广州</li>
+		</ul>			
+	</body>
+	<script type="text/javascript">
+		
+		document.getElementById("shId").onclick = function(){
+
+			var sh = document.getElementById("shId");
+			var ul = sh.parentNode;
+			ul.removeChild(sh);
+		};
+		
+		
+	</script>
+
+	
+</html>

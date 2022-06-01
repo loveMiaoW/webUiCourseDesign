@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="实验五,Experiment 5">
+    <meta name="author" content="我们不拉垮">
+    <meta name="keywords" content="HTML5拖放API/HTML5拖放API之图片相框效果">
+    <link rel="stylesheet" href="./image.css">
+</head>
+<body>
+    
+    <!-- 可放置文件区 -->
+    <div id="recycle" ondragover="allowDrop(event)" ondrop="fileDrop(event)" >
+        请将图片拖放至此处
+    </div>
+    <br />
+    <!--带有相框的图片展示区-->
+    <div id="output"></div>
+    <script src="./image.js">
+    </script>
+    </body>
+</html>

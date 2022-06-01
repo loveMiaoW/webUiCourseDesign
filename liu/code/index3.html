@@ -1,0 +1,22 @@
+<!DOCTYPE>
+<html>
+	<head>	
+		<meta charset="UTF-8">
+	    <meta name="description" content="实验六,Experiment 6">
+	    <meta name="author" content="我们不拉垮">
+	    <meta name="keywords" content="DOM讲义案例/弹出新窗口">
+	</head>
+
+	<body>
+		编号：<input type="text" name="userNum" id="numId" /> <br />
+		姓名：<input type="text" name="userName" id="nameId" /> <br />
+		<input type="button" value="选择" onclick="create()" />
+	</body>
+	<script type="text/javascript">
+		function create(){
+			window.open("./index3.1.html","child","width=400,height=200");
+		}
+	</script>
+
+	
+</html>

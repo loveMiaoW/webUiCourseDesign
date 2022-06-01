@@ -1,0 +1,23 @@
+div,h3{
+	margin: 10px auto;
+	text-align: center;
+}
+textarea{
+	width: 95%;
+	height: 200px;
+	text-indent: 2em;
+	text-align: left;
+}
+button{
+	width: 150px;
+	height: 30px;
+	margin: 10px 0;
+}
+table{
+	width: 95%;
+	margin: auto;
+}
+td{
+	text-align: left;
+	vertical-align: center;
+}

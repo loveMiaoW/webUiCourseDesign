@@ -1,0 +1,34 @@
+<!DOCTYPE>
+<html>
+	<head>	
+		<meta charset="UTF-8">
+	    <meta name="description" content="实验六,Experiment 6">
+	    <meta name="author" content="我们不拉垮">
+	    <meta name="keywords" content="DOM讲义案例/去掉字符串两边的空格">
+	</head>
+
+	<body>
+
+	</body>
+	<script type="text/javascript">
+
+			function myTrim(str){
+				var low = 0;
+				var hight = str.length - 1;
+
+				while(low <= hight && str.charAt(low) == " "){
+					low++;
+				}
+				while(low <= hight && str.charAt(hight) == " "){
+					hight--;
+				}
+
+				return str.substring(low,hight + 1);
+			}	
+
+			var str = "   www.loveMiaow.top    ";
+			alert("-" + str + "-");
+			var ans = myTrim(str);
+			alert("-" + ans + "-");		
+		</script>
+</html>

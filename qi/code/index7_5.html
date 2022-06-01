@@ -1,0 +1,44 @@
+<!DOCTYPE>
+<html>
+	<head>	
+		<meta charset="UTF-8">
+	    <meta name="description" content="实验七,Experiment 7">
+	    <meta name="author" content="我们不拉垮">
+	    <meta name="keywords" content="HTML5媒体API项目/音乐播放器的设计与实现">
+	    <link rel="stylesheet" href="./index7_5.css">  
+	</head>
+	<body>
+		<!--音乐文件的载入-->
+		<audio id="audio"  src="../src/曹操.mp3"  preload></audio>  
+		<!--仿CD样式圆形图片-->
+		<div id="CDimage">
+		    <img src="../src/000.PNG">
+		</div>
+
+
+		<!--音量调节进度条-->
+		<div>
+		    <input id="volume"type="range"min="0"max="1"step="0.1"οnchange="setVolume()"/>
+		</div>
+
+		<!--显示歌曲名称-->
+		<div>
+		    <font color="white"> 正在播放:</font><span id="title"><font color="white">林俊杰的曹操</font></span>
+		</div>
+
+		<!--音乐播放器按钮-->
+		<div>
+		    <button onclick="lastMusic()">
+		        <img src="../src/333.PNG" width="50" height="50"/>
+		    </button>
+		    <button id="toggleBtn" onclick="toggleMusic()">
+		        <img src="../src/5.PNG" width="50" height="50"/>
+		    </button>
+		    <button  onclick="nextMusic()">
+		        <img src="../src/111.PNG" width="50" height="50"/>
+		    </button>
+		</div> 
+
+	</body>
+	<script src="./index7_5.js"></script>  
+</html>

@@ -1,0 +1,17 @@
+div{
+
+    text-align:center;
+    margin:10px; 
+}
+#CDimage img{
+    border-radius:50%;
+}
+img{
+border:0px;
+
+}
+button{
+    background:transparent;
+    border:0;
+    outline:0;
+}

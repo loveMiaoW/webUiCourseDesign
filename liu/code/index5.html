@@ -1,0 +1,58 @@
+<!DOCTYPE>
+<html>
+	<head>	
+		<meta charset="UTF-8">
+	    <meta name="description" content="实验六,Experiment 6">
+	    <meta name="author" content="我们不拉垮">
+	    <meta name="keywords" content="DOM讲义案例/下拉列表省市联动">
+	</head>
+
+	<body>
+		<select id="select1" onchange="show(this.value)">
+			<option value="none">---请选择---</option>
+				<option value="北京">北京</option>
+				<option value="河北">河北</option>
+				<option value="河南">河北</option>
+				<option value="山东">山东</option>
+				<option value="山西">山西</option>			
+		</select>
+
+		<select id="select2">
+			
+		</select>
+			
+	</body>
+	<script type="text/javascript">
+  var arr = [];
+  arr[0] = new Array("北京","海淀区","昌平区","朝阳区","东城区","西城区","丰台区","通州区","怀柔区");
+  arr[1] = new Array("河北","石家庄","秦皇岛","衡水","邯郸","邢台","保定","廊坊","唐山");
+  arr[2] = new Array("河南","郑州","南阳","安阳","焦作","洛阳","濮阳","新乡");
+  arr[3] = new Array("山东","济南","青岛","烟台","威海","日照","安泰","菏泽","济宁");
+  arr[4] = new  Array("山西","太原","大同","阳泉","长治","晋城","朔州","运城","吕梁");
+
+  function show(val) {
+      var select2 = document.getElementById("select2");
+      var options = select2.getElementsByTagName("option");
+      for (var x = 0;x < options.length;x++){
+          var op = options[x];
+          select2.removeChild(op);
+          x++;
+      }
+      for (var i = 0;i < arr.length;i++){
+          var inarr = arr[i];
+          var inStr = inarr[0];
+          if (val == inStr){
+              for (var j = 1;j < inarr.length;j++){
+                  var value = inarr[j];
+                  var option = document.createElement("option");
+                  var text = document.createTextNode(value);
+                  option.appendChild(text);
+                  select2.appendChild(option);
+              }
+          }
+      }
+  }
+</script>
+
+	
+</html>

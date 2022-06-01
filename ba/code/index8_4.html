@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="实验八,Experiment 8">
+		<meta name="author" content="我们不拉垮">
+		<meta name="keywords" content="HTML5Web存储API项目/基于Web存储技术的网页日志本">
+		<link rel="stylesheet" type="text/css" href="index8_4.css">
+	</head>
+	<body onload="getHistory()">
+		<h3>我的日记本</h3>
+		<div>
+			<h4>开始写日记</h4>
+			<textarea id="diary"></textarea>
+			<br/>
+			<button onclick="saveDiary()">保存日记</button>
+			<button onclick="clearDiary()">删除全部日记</button>
+		</div>
+		<div>
+			<table border="1">
+				<caption>
+					历史记录
+				</caption>
+				<tr>
+					<th>序号</th>
+					<th>日志内容</th>
+					<th>保存时间</th>
+					<th>操作</th>
+				</tr>
+				<tbody id="history"></tbody>
+			</table>
+		</div>
+	</body>
+	<script type="text/javascript" src="index8_4.js"></script>
+</html>

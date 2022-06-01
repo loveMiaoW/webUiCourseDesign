@@ -1,0 +1,22 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="keywords" content="CSS样式练习/四种样式表优先级验证">
+		<meta name="author" content="我们不拉跨">
+		<meta name="description" content="实验三,Experiment 3">
+		<link rel="stylesheet" type="text/css" href="./div.css">
+		<style type="text/css">
+			
+			div {
+				color: red;
+			}
+
+			@import url("./div2.css");
+		</style>
+	</head>
+	<!-- body样式 渐变色 从#14130 ~ #243b55 字体颜色-->
+	<body style="background: linear-gradient(#141e30, #243b55);color:#fff">
+		
+	</body>
+</html>

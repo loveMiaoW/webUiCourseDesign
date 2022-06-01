@@ -1,0 +1,55 @@
+<!DOCTYPE>
+<html>
+	<head>	
+		<meta charset="UTF-8">
+	    <meta name="description" content="实验七,Experiment 7">
+	    <meta name="author" content="我们不拉垮">
+	    <meta name="keywords" content="HTML5媒体API项目/在线教学视频的设计与实现">
+	    <link rel="stylesheet" href="./index7_6.css">  
+	</head>
+	<body>
+		<div id="course">
+            <!--创建视频播放窗口-->
+            <video id="screen" width="640" src="../video/bizhi.mp4" controls autoplay>
+                对不起，您的浏览器不支持HTML5视频。
+            </video>
+            <!--课程大纲列表-->
+            <ul>
+                <li>
+                    <!--课程标题-->
+                    <h3>欧洲简史</h3>
+                </li>
+                <!--水平线-->
+                <hr />
+                <li onclick="playCourse(60)">
+                    <img src="../src/5.png" />
+                    <span>早期基督美术建筑</span>
+                </li>
+                <hr />
+                <li onclick="playCourse(120)">
+                    <img src="../src/5.png" />
+                    <span>早期基督美术之绘画</span>
+                </li>
+                <!--水平线-->
+                <hr />
+                <li onclick="playCourse(220)">
+                    <img src="../src/5.png" />
+                    <span>早期基督美术之绘画：拜占庭美术</span>
+                </li>
+                <!--水平线-->
+                <hr />
+                <li onclick="playCourse(320)">
+                    <img src="../src/5.png" />
+                    <span>早期基督美术之绘画：镶嵌画</span>
+                </li>
+                <!--水平线-->
+                <hr />
+                <li onclick="playCourse(420)">
+                    <img src="../src/5.png" />
+                    <span>早期基督美术之绘画：罗马式美术</span>
+                </li>
+            </ul>
+        </div>
+	</body>
+	<script src="./index7_6.js"></script>  
+</html>

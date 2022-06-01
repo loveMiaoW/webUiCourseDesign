@@ -1,0 +1,37 @@
+<!DOCTYPE>
+<html>
+	<head>	
+		<meta charset="UTF-8">
+	    <meta name="description" content="实验六,Experiment 6">
+	    <meta name="author" content="我们不拉垮">
+	    <meta name="keywords" content="DOM讲义案例/替换节点">
+	</head>
+
+	<body>
+			<ul id="ulId1">
+				<li>北京</li>
+				<li id="shId">上海</li>
+				<li>广州</li>
+			</ul>
+
+			<ul id="ulId2">
+				<li>东城区</li>
+				<li id="pdId">浦东区</li>
+				<li>黄埔区</li>
+			</ul>
+		
+	</body>
+	<script type="text/javascript">
+		
+		document.getElementById("shId").onclick = function(){
+					// 获取"浦东区"节点
+		var pdq = document.getElementById("pdId");
+
+					// this代表上海
+		this.parentNode.replaceChild(pdq,this);
+		};
+
+	</script>
+
+	
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="实验五,Experiment 5">
+		<meta name="author" content="我们不拉垮">
+		<meta name="keywords" content="javascript基础项目/电子日历的设计与实现">
+		<link rel="stylesheet" href="./calendar.css">
+		<script src="./calendar.js"></script>
+	</head>
+	
+	<body onload="showDate()">
+		<div id="calendar">
+			<!-- 状态栏 -->
+			<div>
+				<button onclick="lastMonth()" class="but">上个月</button>
+
+				<div id="month"></div>
+
+				<button onclick="nextMonth()" class="but">下个月</button>
+			</div>
+			<hr />
+			<!-- 星期几 -->
+			<div>
+
+				<div class="everyday">日</div>
+				<div class="everyday">一</div>
+				<div class="everyday">二</div>
+				<div class="everyday">三</div>
+				<div class="everyday">四</div>
+				<div class="everyday">五</div>
+				<div class="everyday">六</div>
+			</div>
+
+			<!-- 具体日期 -->
+			<div>
+				<div id="day"></div>
+			</div>
+		</div>
+	
+			
+	</body>
+
+	
+
+
+</html>

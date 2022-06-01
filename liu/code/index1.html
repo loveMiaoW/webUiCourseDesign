@@ -1,0 +1,29 @@
+<!DOCTYPE>
+
+<html>
+	<head>	
+		<meta charset="UTF-8">
+	    <meta name="description" content="实验六,Experiment 6">
+	    <meta name="author" content="我们不拉垮">
+	    <meta name="keywords" content="DOM讲义案例/九九乘法表">
+	</head>
+
+	<body>
+		<script>
+			document.write("<table border='1' width='50%' cellpading='10%'>");
+
+			for(var i = 1;i <= 9;i++){
+				document.write("<tr>");
+
+				for(var j = 1;j <= i;j++){
+					document.write("<td>" + j + "*" + i + "=" + i * j + "</td>");
+				}
+
+				document.write("</tr>");
+			}
+
+			document.write("</table>");
+		</script>
+
+	</body>
+</html>

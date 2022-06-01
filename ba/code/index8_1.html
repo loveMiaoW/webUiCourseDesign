@@ -1,0 +1,49 @@
+<!DOCTYPE>
+<html>
+	<head>	
+		<meta charset="UTF-8">
+	    <meta name="description" content="实验八,Experiment 8">
+	    <meta name="author" content="我们不拉垮">
+	    <meta name="keywords" content="HTML5地理定位API项目/运动数据记录页面的设计与实现">
+	    <link rel="stylesheet" href="./index8_1.css">  
+	</head>
+	<body>
+        <div>
+            <h4>您的当前状态</h4>
+            <ul>
+                <li>
+                   	 开始时间：<span id="start_time"></span>
+                </li>
+                <li>
+                   	 完成时间：<span id="end_time"></span>
+                </li>
+                <li>
+                  	  总距离：<span id="distance">0</span>km
+                </li>
+            </ul>
+ 
+            <h4>详细信息</h4>
+            <ul>
+                <li>
+  					经度：<span id="long"></span>°
+  				</li>
+  				<li>
+  					纬度：<span id="lat"></span>°
+  				</li>
+  				<li>
+  					位置精确度：<span id="acc"></span>
+  				</li>
+  				<li>
+  					海拔高度：<span id="alt">0</span>m
+ 	 			</li>
+  				<li>
+  					速度：<span id="speed">0</span>m/s
+  				</li>
+            </ul>
+            <div class="center">
+                <button id="btn" onclick="toggleBtn()">开始记录</button>
+            </div>
+        </div>
+	</body>
+	<script src="./index8_1.js"></script>  
+</html>

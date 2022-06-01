@@ -1,0 +1,35 @@
+<!DOCTYPE>
+<html>
+	<head>	
+		<meta charset="UTF-8">
+	    <meta name="description" content="实验八,Experiment 8">
+	    <meta name="author" content="我们不拉垮">
+	    <meta name="keywords" content="综合应用设计/贪吃蛇的设计与实现">
+	    <link rel="stylesheet" href="./index8_5.css">  
+	</head>
+	<body>
+		 <div id="container">
+            <h3>基于HTML5的贪吃蛇小游戏</h3>
+            <hr>
+            <!--状态信息栏-->
+            <div id="status">
+                <!--历史最高分-->
+                <div class="box">
+                    历史最高分：<span id="bestScore">0</span>
+                </div>
+                <!--当前分数-->
+                <div class="box">
+                    当前分数：<span id="currentScore">0</span>
+                </div>
+            </div>
+            <!--设置游戏画布-->
+            <canvas id="myCanvas" width="400" height="400" style="border:1px solid"></canvas>
+            <div>
+                <button onclick="window.location.reload()">
+                    重新开始
+                </button>
+            </div>
+        </div>
+	</body>
+	<script src="./index8_5.js"></script>  
+</html>

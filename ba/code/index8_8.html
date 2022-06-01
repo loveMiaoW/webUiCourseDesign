@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        img{
+            position:absolute;
+            /*top:100px;
+            left:100px;*/
+        }
+    </style>
+</head>
+<body onload="run()">
+<img alt="" id="sunsetId" style="top:100px;left:100px;width: 50%;" src="./2.jpg"> <br/>
+</body>
+<script type="text/javascript">
+    function run(){
+        var sunset = document.getElementById("sunsetId");
+        sunset.style.top = Math.random()*300 + "px";
+        sunset.style.left = Math.random()*500 +"px";
+        window.setTimeout("run()",1000);
+    }
+</script>
+</html>

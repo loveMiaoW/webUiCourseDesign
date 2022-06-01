@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="实验五,Experiment 5">
+		<meta name="author" content="我们不拉垮">
+		<meta name="keywords" content="HTML5拖放API/回收站效果">
+		<link rel="stylesheet" type="text/css" href="./recycle.css"/>
+	</head>
+	<body>
+		<h3>HTML5拖放API，回收站效果</h3>
+		<hr >
+		<div id="container">
+			<div id="file1" class="folder" draggable="true" ondragstart="drag(event)">
+				文件1
+			</div>
+			<div id="file2" class="folder" draggable="true" ondragstart="drag(event)">
+				文件2
+			</div>
+			<div id="file3" class="folder" draggable="true" ondragstart="drag(event)">
+				文件3
+			</div>
+			<div id="file4" class="folder" draggable="true" ondragstart="drag(event)">
+				文件4
+			</div>
+		</div>
+		
+		<div id="recycle" ondragover="allowDrop(event)" ondrop="drop(event)">
+			
+		</div>
+		
+	</body>
+	<script type="text/javascript" src="./recycle.js"></script>
+</html>

@@ -1,0 +1,36 @@
+* {
+	margin: 0;
+	padding: 0;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	color: #000;
+	background: linear-gradient(#f1f4f9, #dff1ff);
+	
+}
+
+.tbl {
+	position: absolute;
+	width: 90%;
+	border-collapse: collapse;
+}
+
+.tbl caption {
+	border-style: solid;
+	border-width: 1px;
+	padding: 7px;
+}
+
+.tbl th {
+	background-color: orange;
+}
+
+.dongfangbubai,.renwoxing {
+	background-color: #ffeddb;
+}

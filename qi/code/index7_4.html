@@ -1,0 +1,35 @@
+<!DOCTYPE>
+<html>
+	<head>	
+		<meta charset="UTF-8">
+	    <meta name="description" content="实验七,Experiment 7">
+	    <meta name="author" content="我们不拉垮">
+	    <meta name="keywords" content="HTML5画布API项目/拼图游戏的设计与实现">
+	    <link rel="stylesheet" href="./index7_4.css">  
+
+	</head>
+	<body>
+		 <div id="container">
+		    <!--页面标题-->
+            <h3>HTML5画布综合项目之拼图游戏</h3>
+			<!--水平线-->
+            <hr />
+			<!--游戏内容-->
+			<!--游戏时间-->        
+		    <div id="timeBox">
+                共计时间：<span id="time">00:00:00</span>
+            </div>
+			<!--游戏画布-->
+            <canvas id="myCanvas" width="300" height="300" style="border:1px solid">
+                对不起，您的浏览器不支持HTML5画布API。
+            </canvas>
+			<!--游戏按钮-->
+            <div>
+                <button onclick="restartGame()">
+                    重新开始
+                </button>
+			</div>  
+        </div>		
+	</body>
+	<script src="./index7_4.js"></script>  
+</html>

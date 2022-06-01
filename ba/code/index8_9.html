@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>全选/全不选/反选 的前台效果</title>
+</head>
+<body>
+<h3>全选/全不选练习</h3>
+<input type="checkbox" id="AllorNoID" onclick="selectAllorNo()" checked="">全选/全不选<br/>
+<br/>
+<input type="checkbox" name="love" />篮球
+<input type="checkbox" name="love" />足球
+<input type="checkbox" name="love" />乒乓球
+<input type="checkbox" name="love" />羽毛球
+<br/><br/>
+<input type="button" value="全选" onclick="selectAll()">
+<input type="button" value="全不选" onclick="selectNo()">
+<input type="button" value="反选" onclick="selectOthers()">
+</body>
+<script type="text/javaScript">
+//多选
+function selectAll(){
+    var loveinputs = document.getElementsByName("love");
+    for(var i = 0; i < loveinputs.length; i++){
+        var tempinput = loveinputs[i];
+        //方式1：修改checked属性
+        tempinput. checked = true;//true、check 可以
+        //方式2：删除checked属性，
+        //tempinput.removeAtrribute("checked",);
+        }
+    }
+//全不选
+function selectNo(){
+    var loveinputs = document.getElementsByName("love");
+    for(var i = 0; i < loveinputs.length; i++){
+        var tempinput = loveinputs[i];
+        //方式1：修改checked属性
+        tempinput. checked = false;//false、null、"" ，三者都可以。
+        //方式2：删除checked属性，在此软件中不行
+        //tempinput.removeAtrribute("checked");
+        }
+    }
+//反选
+function selectOthers(){
+    var loveinputs = document.getElementsByName("love");
+    for(var i = 0; i < loveinputs.length; i++){
+        var tempinput = loveinputs[i];
+        //判断input标签的checked属性
+        //方式1：checked = true
+        if(tempinput.checked == true){//已经被选择了
+        //修改为不被选择
+            tempinput. checked=false;
+        }else{//没有被选择
+             //修改为选择
+            tempinput. checked = true;
+        }
+        }
+    }
+//顶部“全选/全不选”
+function selectAllorNo(){
+    var input = document.getElementsById("AllorNoID");
+    //判断当前input标签的checked属性
+        if(input.checked == true){//如果当前是全选
+        //修改为全不选
+            selectNo();
+        }else{//如果当前为全不选
+        //修改为全选
+            selectAll();
+        }
+    }
+</script>
+</html>

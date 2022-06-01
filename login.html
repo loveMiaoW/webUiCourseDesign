@@ -1,0 +1,40 @@
+<!DOCTYPE>
+<html>
+	<head>	
+		<meta charset="UTF-8">
+	    <link rel="stylesheet" href="./css/login.css">
+	</head>
+	<body>
+		<div id="container">
+			<h1>用户登录</h1>
+			<hr />
+			<form method="post" action="index.html" autocomplete="on" autocomplete="on" onsubmit="return func();" name="login">
+				<label>用户名:<input type="text" placeholder="请输入用户名" name="username" required />
+				</label>
+				<br />
+				<label>
+					密码:<input type="password" placeholder="请输入密码" name="pwd" required />
+				</label>
+				<br />
+				<label>
+					确认:<input type="password" placeholder="请再次输入密码" name="pwd" required />
+				</label>
+				<br />
+				<label>
+					邮箱:<input type="email" placeholder="请输入电子邮箱" name="email" required />
+				</label>
+				<br />
+				<button type="submit">
+					登录
+				</button>
+				<button type="reset">
+					<a href="./register.html">注册</a>
+				</button>
+				<button type="submit">
+					重置
+				</button>
+			</form>
+		</div>
+	</body>
+	<script type="text/javascript" src="./js/login.js"></script>
+</html>

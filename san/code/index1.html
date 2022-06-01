@@ -1,0 +1,32 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="keywords" content="CSS样式练习/HTML+CSS的四种结合方式">
+		<meta name="author" content="我们不拉跨">
+		<meta name="description" content="实验三,Experiment 3">
+		<link rel="stylesheet" type="text/css" href="./link.css">
+		<style type="text/css">
+			@import url("./index.css");
+
+			div {
+				color: black;
+				background-color: red;
+			}	
+		</style>
+	</head>
+	<!-- body样式 渐变色 从#14130 ~ #243b55 字体颜色-->
+	<body style="background: linear-gradient(#141e30, #243b55);color:#fff">
+		<!-- 行内样式表 -->
+		<div style="background-color:rgba(255,255,255,0.1);color:#03e9f4">我被行内的style更改了背景颜色和字体颜色</div><br />
+
+		<!-- 内部样式表 -->
+		<div>┭┮﹏┭┮ 这个div没有行内样式，格式单一,但是被head标签里的style更改了格式</div><br />
+
+		<!-- import导入 -->
+		<span>我是span标签我被外部index.css更改了格式</span><br /><br />
+		
+		<!-- 外部样式表(link引用) -->
+		<a>我是a标签 我被外部的link.css更改了格式</a>
+	</body>
+</html>

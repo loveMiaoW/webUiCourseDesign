@@ -1,0 +1,45 @@
+body{
+	background: linear-gradient(#141e30, #243b55);
+}
+
+div {
+	background: #FFF;
+	color: #09F;
+	padding: 15px;
+	margin: 60px auto 0px;
+	width: 600px;
+	font-family: "微软雅黑";
+	box-shadow: 10px 10px 15px black  ;}	
+h2 {
+	text-align:center;
+}
+hr {
+	width: 80%;
+	border: 1px solid  #09F ;
+	margin-top: -5px;
+}
+input {
+	margin: 10px;
+}
+li {
+	margin: 10px;
+}
+input[type="text"] ,input[type="tel"] { 
+	width: 100px;
+	border: 0px;
+	border-bottom: 1px solid;	
+}
+	
+button {
+	background: #09F;
+	color: white;
+	width: 100px;
+	height: 40px;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: "微软雅黑";
+	margin: 5% 39%;
+} 
+button:hover {
+	background:#0CF;
+}

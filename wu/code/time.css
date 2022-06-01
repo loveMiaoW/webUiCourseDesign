@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* 让页面始终占浏览器可视区域总高度 */
+	height: 100vh;
+	/* 背景渐变色 */
+	background: linear-gradient(#141e30, #243b55);
+
+}
+
+#clock {
+	position: relative;
+	width: 800px;
+	font-size: 80px;
+	font-weight: bold;
+	color: #000;
+	text-align: center;
+	margin-left: 300px;
+}
+
+.box1 {
+	margin-right: 10px;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	float: left;
+	
+}
+
+.box2 {
+	width: 30px;
+	float: left;
+	margin-top: -10px;
+	margin-right: 10px;
+}

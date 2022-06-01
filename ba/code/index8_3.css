@@ -1,0 +1,53 @@
+body{
+	background-color: #CCCCCC;
+	margin: 0px auto;
+	max-width: 900px;
+	text-align: center;
+}
+
+header, footer{
+	background-color: orange;
+	color: #FFFFFF;
+}
+
+header{
+	padding:30px;
+	   margin-top: 20px;
+}
+
+header h1{
+	font-size: 40px;
+	margin: 0px;
+}
+
+footer{
+	padding: 15px;
+}
+
+footer h2 {
+	font-size: 14px;
+}
+
+#container{
+	background-color: #FFF;
+}
+
+section{
+	width: 60%;
+	padding: 30px;
+	margin:auto;
+}
+
+article{
+	background-color: #EEE;
+	padding: 5px;
+}
+
+article h1 {
+	font-size: 18px;
+}
+
+select,button{
+	margin: 10px;
+	font-size:16px;
+}

@@ -1,0 +1,33 @@
+html, body {
+        	height: 100%;
+        	margin: 0px;
+        	padding: 0px
+        }
+        #container {
+        	width: 100%;
+        	height: 100%
+        }
+        #bar {
+        	position: relative;
+        	z-index: 99;
+        	left: 0%;
+        	top: 75%;
+        	text-align:  center;
+        	vertical-align: middle;
+        	height: 25%;
+        	font-size: 1.2em;
+            background-color: white;   
+        }
+        #btn{
+        	position: relative;
+        	background-color: #00FD00;
+        	border: none;
+        	outline: none;
+        	width: 30%;
+            margin-top: 25px;
+            padding: 10px;
+        }
+        #info{
+        	margin: 10px;
+        	padding: 10px;
+        }
