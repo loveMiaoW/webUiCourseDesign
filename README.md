@@ -1,7 +1,7 @@
-# 20220301-0601webUi
+# 20230301-0601webUi
 >### 大二下webUI实验
 >
->### 河北农业大学
+>### 中国农业大学
 
 >[梦开始的地方](https://lovemiaow.github.io/webUi/)
 >
